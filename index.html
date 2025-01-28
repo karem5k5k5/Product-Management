@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="crud container">
+        <header>
+            <h1 class="text-center text-uppercase text-white">cruds</h1>
+            <h3 class="text-center text-capitalize text-white">product management system</h3>
+        </header>
+        <div class="inputs">
+            <input type="text" class="form-control" placeholder="title" id="title">
+            <div class="price">
+                <input type="number" class="form-control" placeholder="price" id="price">
+                <input type="number" class="form-control" placeholder="taxes" id="taxes">
+                <input type="number" class="form-control" placeholder="ads" id="ads">
+                <input type="number" class="form-control" placeholder="discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" class="form-control" placeholder="count" id="count">
+            <input type="text" class="form-control" placeholder="category" id="category">
+            <button type="submit" id="submit" class="btn btn-primary">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" class="form-control" id="search" placeholder="search">
+                <div class="btnSearch d-flex justify-content-between">
+                    <button id="searchTitle" class="btn btn-primary text-capitalize">search by title</button>
+                    <button id="searchCategory" class="btn btn-primary text-capitalize">search by category</button>
+                </div>
+            </div>
+        </div>
+        <div id="deleteAll">
+            
+        </div>
+        <table class="w-100 text-center my-3 text-white">
+            <thead class="text-uppercase">
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
